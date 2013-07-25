@@ -16,3 +16,4 @@
 /tmp
 
 /config/initializers/steam_web_api.rb
+/config/initializers/secret_token.rb
