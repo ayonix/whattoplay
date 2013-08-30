@@ -1,0 +1,17 @@
+  <div class="contain-to-grid">
+    <nav class="top-bar">
+      <ul class="title-area">
+        <li class="name"><h1><%= link_to "WhatToPlay", root_path %></h1></li>
+      </ul>
+
+      <div class="top-bar-section">
+        <ul class="right">
+          <% if user_signed_in? %>
+          <li> <img src="<%= session[:steam_info][:info][:image] %>"> </li>
+          <li> <%= link_to session[:steam_info][:info][:nickname], session[:steam_info][:info][:urls][:Profile] %> </li>
+          <li> <%= link_to 'Sign out', signout_path %> </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </nav>

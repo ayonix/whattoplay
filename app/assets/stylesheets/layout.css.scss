@@ -1,0 +1,13 @@
+section {
+  @include grid-row;
+}
+
+#content {
+  padding: 10px;
+}
+
+#footer {
+  background: $secondary-color;
+  margin-top: 15px;
+  padding: 10px;
+}

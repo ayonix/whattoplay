@@ -1,0 +1,19 @@
+<%= form_tag find_games_path, remote: true, method: :post do |f| %>
+<div class="row collapse">
+  <div class="large-1 columns">
+    <span class="prefix">Users</span>
+  </div>
+  <div class="large-4 columns">
+    <%= select_tag("friends",options_for_select(@friends.map{|f| [f["personaname"],f["steamid"]]}.sort), multiple: true, class: "select")%>
+  </div>
+  <div class="large-1 columns">
+    <span class="prefix">Categories</span>
+  </div>
+  <div class="large-4 columns">
+    <%= select_tag("categories",options_for_select(@categories), multiple: true, class: "select") %>
+  </div>
+  <div class="large-2 columns">
+    <%= submit_tag "Go", class: "button postfix", data: {disable_with: "Searching..."}, width: "100%" %>
+  </div>
+</div>
+<% end %>

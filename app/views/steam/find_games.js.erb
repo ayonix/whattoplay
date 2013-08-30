@@ -1,0 +1,3 @@
+$("#ajax_result").empty()
+$("#ajax_result").append("<%= escape_javascript(render(:partial => "steam_apps/steam_app", :collection => @games, :locals => {:owned_games => @owned_games})) %>");
+// history.pushState(null, null, '<%= request.fullpath %>')

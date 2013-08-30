@@ -1,0 +1,33 @@
+// Place all the styles related to the steam controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.categories_select {
+  width: 100%;
+}
+
+.friends_select {
+  width: 100%;
+}
+
+#submit_fieldset {
+  text-align: center;
+}
+
+.select2-container {
+  width: 100%;
+}
+
+#ajax_result {
+  @include block-grid(5, 0); 
+  li {
+    margin-bottom: 5px;
+    img {
+      border-radius: 10px;
+      border: 2px solid black;
+    }
+    img:hover {
+      border: 2px solid $primary-color;
+    }
+  }
+}
